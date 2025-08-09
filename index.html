@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Timeline</title>
+  <link rel="stylesheet" href="Styles1.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo"><span>⌛</span> Social Media Timeline</div>
+    <div class="theme-toggle-wrapper">
+      <label for="theme-toggle">
+        <span id="theme-label">Light Theme</span>
+        <input type="checkbox" id="theme-toggle">
+      </label>
+    </div>
+  </header>
+
+  <!-- Nav placeholder for filters -->
+  <nav>
+    <!-- Filters will go here in future -->
+  </nav>
+
+  <main>
+    <section id="timeline">
+      <h1>History of Popular Social Media Platforms</h1>
+
+      <article class="timeline-item left">
+        <div class="timeline-content">
+          <time datetime="2002">2002</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo" />
+            <h3>LinkedIn</h3>
+          </figure>
+          <p>A business- and employment-oriented social networking service that operates via websites and mobile apps.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item right">
+        <div class="timeline-content">
+          <time datetime="2004">2004</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo" />
+            <h3>Facebook</h3>
+          </figure>
+          <p>An online social media and social networking service based in Menlo Park, California.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item left">
+        <div class="timeline-content">
+          <time datetime="2005">2005</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube logo" />
+            <h3>YouTube</h3>
+          </figure>
+          <p>First large-scale video sharing website that makes it easy to watch videos online.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item right">
+        <div class="timeline-content">
+          <time datetime="2006">2006</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter logo" />
+            <h3>Twitter</h3>
+          </figure>
+          <p>A service for friends, family, and coworkers to communicate and stay connected through quick, frequent messages.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item left">
+        <div class="timeline-content">
+          <time datetime="2009">2009</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" />
+            <h3>WhatsApp</h3>
+          </figure>
+          <p>A cross-platform messaging app for text, voice, video calls, and media sharing.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item right">
+        <div class="timeline-content">
+          <time datetime="2010">2010</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest logo" />
+            <h3>Pinterest</h3>
+          </figure>
+          <p>A visual bookmarking tool that helps you discover and save creative ideas.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item left">
+        <div class="timeline-content">
+          <time datetime="2010">2010</time>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo" />
+            <h3>Instagram</h3>
+          </figure>
+          <p>A platform for visual storytelling, popular with creatives and influencers.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Modal placeholder moved outside timeline -->
+    <div id="modal" aria-hidden="true"></div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const label = document.getElementById('theme-label');
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      toggle.checked = true;
+      label.textContent = 'Dark Theme';
+    }
+
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+        document.body.classList.add('dark');
+        label.textContent = 'Dark Theme';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark');
+        label.textContent = 'Light Theme';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
