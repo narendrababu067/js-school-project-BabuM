@@ -1,22 +1,77 @@
-# js-school-project-BabuM
-A JavaScript school project to build a responsive  Dynamic web development
 
- # 🎯 Project Goal
- To design and develop a timeline app that shows the history of social media platforms using using semantic HTML, modern CSS.The application will also demonstrate theme toggling, modal dialogs, and responsive design best practices.
+**Goal / Scope**
 
- # 🗺️ Roadmap
-  ✅ Task 1: HTML Skeleton
-- Set up the basic structure using semantic elements (`<header>`, `<main>`, `<section>`, etc.)
-- Include placeholders for timeline items and modal
-- Add logo and theme toggle button
+The main goal of this project is to improve an existing social media timeline web app using TypeScript. This will include adding static typing and organizing the code better.
 
- 🔄 Task 2: CSS Styling
-- Style the timeline layout and cards
-- Implement responsive design (mobile, tablet, desktop)
-- Use CSS custom properties (`--accent-color`) for themes
--  Implement theme toggling (light/dark mode)
+Make sure to convert all JavaScript to TypeScript (.ts) with strict type checking.
 
- 🔄 Task 3: Accessibility & Polish
-- Ensure ARIA labels and keyboard navigation
-- Optimize for screen readers and mobile users
-- Code cleanup and performance improvements
+Divide the code into ES modules for easier maintenance. Examples include fetcher.ts, renderer.ts, modal.ts, and theme.ts.
+
+Set up build scripts to compile TypeScript into JavaScript in a dist/ folder.
+
+Keep the original functionality, which includes a vertical timeline with alternating left and right cards, clickable modals, and a light/dark theme toggle.
+
+Check that the compiled JavaScript works correctly in the browser.
+
+**Main Changes**
+
+**TypeScript Integration**
+
+- Added tsconfig.json with strict mode turned on.
+- Converted script.js to src/index.ts.
+- Introduced interfaces and types for timeline events.
+
+**Modular Code Structure**
+
+- Created separate modules:
+  - fetcher.ts: fetch or define timeline events.
+  - renderer.ts: render timeline cards dynamically.
+  - modal.ts: manage modal open/close functionality.
+  - theme.ts: manage light/dark theme toggle.
+
+**Build & Output**
+
+- Added npm scripts:
+  - build: compile TypeScript to JavaScript.
+  - watch: auto-compile on changes.
+  - start: compile and serve the project locally.
+
+The compiled JavaScript is output to the dist/ folder, which the browser will use.
+
+**Browser Verification**
+
+The timeline still shows the left and right alternating cards.
+
+Modals open correctly when clicked.
+
+The theme toggle works.
+
+
+How to Run
+
+Clone the repository
+
+git clone https://github.com/narendrababu067/js-school-project-BabuM.git  
+cd js-school-project-BabuM
+
+Install dependencies
+
+npm install
+
+Build the TypeScript code
+
+npm run build
+
+This compiles all .ts files from src/ into JavaScript in the dist/ folder.
+
+Start a local server
+
+npm start
+
+This runs the build again and serves the project using serve.
+
+Open your browser at the URL shown in the terminal (for example, http://localhost:3000 or another port if 3000 is busy).
+
+
+
+
