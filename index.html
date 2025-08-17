@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo"><span>⌛</span> Social Media Timeline</div>
+    <div class="theme-toggle-wrapper">
+      <label for="theme-toggle">
+        <span id="theme-label">Light Theme</span>
+        <input type="checkbox" id="theme-toggle">
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section id="timeline">
+      <h1>History of Popular Social Media Platforms</h1>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-image" src="" alt="" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-year"></p>
+      <p id="modal-description"></p>
+      <p id="modal-category"></p>
+    </div>
+  </div>
+
+  <script type="module" src="dist/index.js"></script>
+</body>
+</html>

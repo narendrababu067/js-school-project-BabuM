@@ -1,0 +1,14 @@
+{
+  "name": "social-media-timeline",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npm run build && npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.0.0",
+    "typescript": "^5.5.0"
+  }
+}
