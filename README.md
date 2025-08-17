@@ -1,4 +1,3 @@
-
 **Goal / Scope**
 
 The main goal of this project is to improve an existing social media timeline web app using TypeScript. This will include adding static typing and organizing the code better.
