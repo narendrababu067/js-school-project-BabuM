@@ -1,22 +1,40 @@
-# js-school-project-BabuM
-A JavaScript school project to build a responsive  Dynamic web development
+# Social Media Timeline
 
- # 🎯 Project Goal
- To design and develop a timeline app that shows the history of social media platforms using using semantic HTML, modern CSS.The application will also demonstrate theme toggling, modal dialogs, and responsive design best practices.
+This is a static HTML/CSS project that shows the history of popular social media platforms in a timeline format. This is **Stage 1** of the project, where we build only the basic layout of the app. Future stages will add interactivity and transition the app to React.
 
- # 🗺️ Roadmap
-  ✅ Task 1: HTML Skeleton
-- Set up the basic structure using semantic elements (`<header>`, `<main>`, `<section>`, etc.)
-- Include placeholders for timeline items and modal
-- Add logo and theme toggle button
+---
 
- 🔄 Task 2: CSS Styling
-- Style the timeline layout and cards
-- Implement responsive design (mobile, tablet, desktop)
-- Use CSS custom properties (`--accent-color`) for themes
--  Implement theme toggling (light/dark mode)
+## Stage 1 Goals
 
- 🔄 Task 3: Accessibility & Polish
-- Ensure ARIA labels and keyboard navigation
-- Optimize for screen readers and mobile users
-- Code cleanup and performance improvements
+- Create the **basic structure** of the timeline app.
+- Use **semantic HTML tags** to improve accessibility and organization.
+- Prepare a **space for future modal popups**.
+- Style the timeline using **CSS** with support for light and dark themes (via a toggle switch).
+
+---
+
+## Project Structure
+
+### HTML Features
+- **`<header>`** contains the logo and the dark theme toggle switch.  
+- **`<nav>`** is a placeholder (currently empty) for future filters or bookmarks.  
+- **`<main>` / `<section id="timeline">`** is the main container where event markers appear.  
+- **`<article>` / `<figure>` / `<time>`** are semantic tags for individual timeline items.  
+- **`<div id="modal">`** is an empty container set aside for future pop-ups.  
+
+### Styling
+- A responsive vertical timeline with alternating markers on the left and right.  
+- A light/dark theme toggle that uses a checkbox.  
+- CSS transitions for smooth theme changes and hover effects on events.  
+
+---
+
+## File List
+
+- `index.html` holds the static timeline markup and the theme toggle.  
+- `style.css` (included inline in this stage) contains styles for layout, colors, and timeline markers.  
+- `README.md` is the project documentation (this file).
+
+  ## How to Run
+  -open the html file in chrome or Microsoft or any web browsers
+  
