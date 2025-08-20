@@ -1,22 +1,25 @@
-# js-school-project-BabuM
-A JavaScript school project to build a responsive  Dynamic web development
+## Goal / Scope
+Rebuild the UI as a React application using Vite with TypeScript to create a modular, maintainable, and dynamic interface. This task migrates the existing timeline UI into reusable React components and sets up state management using hooks.
 
- # 🎯 Project Goal
- To design and develop a timeline app that shows the history of social media platforms using using semantic HTML, modern CSS.The application will also demonstrate theme toggling, modal dialogs, and responsive design best practices.
+## Main changes
+- Bootstrapped project using **Vite (React + TypeScript template)**.  
+- Added core components:  
+  - `<Header>`: logo and theme switch.  
+  - `<Timeline>`: renders events dynamically.  
+  - `<EventMarker>`: displays year/title dots.  
+  - `<EventModal>`: detailed view using React Portal.  
+  - *(Optional)* `<FilterPanel>` placeholder for future filters/bookmarks.  
+- Implemented **state with useState/useEffect** for loading event data and controlling modal visibility.  
+- Preserved styling by importing existing CSS. Future migration to CSS Modules or styled-components is possible.  
 
- # 🗺️ Roadmap
-  ✅ Task 1: HTML Skeleton
-- Set up the basic structure using semantic elements (`<header>`, `<main>`, `<section>`, etc.)
-- Include placeholders for timeline items and modal
-- Add logo and theme toggle button
-
- 🔄 Task 2: CSS Styling
-- Style the timeline layout and cards
-- Implement responsive design (mobile, tablet, desktop)
-- Use CSS custom properties (`--accent-color`) for themes
--  Implement theme toggling (light/dark mode)
-
- 🔄 Task 3: Accessibility & Polish
-- Ensure ARIA labels and keyboard navigation
-- Optimize for screen readers and mobile users
-- Code cleanup and performance improvements
+## How to test
+1. Clone the repository and checkout the `feature/task-5` branch.  
+2. Install dependencies:
+   ```bash
+   npm install
+   ```  
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```  
+4. Open the given localhost in your browser.
