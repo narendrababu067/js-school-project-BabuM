@@ -23,7 +23,22 @@
 
 ---
 
+
 ## Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/narendrababu067/js-school-project-BabuM.git
+
+
+2.Navigate to project folder:
+
+cd my-timeline-app
+
+3.Install dependencies:
+
+npm install
+
+4.Run the app:
+
+npm run dev
+5.Open your browser at the displayed localhost URL (usually http://localhost:5173).
