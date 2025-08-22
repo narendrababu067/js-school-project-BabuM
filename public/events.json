@@ -1,0 +1,58 @@
+[
+  {
+    "year": "2002",
+    "title": "LinkedIn",
+    "description": "A business- and employment-oriented social networking service.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+    "category": "Professional"
+  },
+  {
+    "year": "2004",
+    "title": "Facebook",
+    "description": "An online social media and social networking service.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    "category": "General"
+  },
+  {
+    "year": "2005",
+    "title": "YouTube",
+    "description": "First large-scale video sharing website.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
+    "category": "Video"
+  },
+  {
+    "year": "2006",
+    "title": "Twitter",
+    "description": "A microblogging service for quick, frequent messages.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg",
+    "category": "Microblog"
+  },
+  {
+    "year": "2009",
+    "title": "WhatsApp",
+    "description": "Cross-platform messaging app for text, voice, and video.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "category": "Messaging"
+  },
+  {
+    "year": "2010",
+    "title": "Pinterest",
+    "description": "A visual bookmarking tool for creative ideas.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png",
+    "category": "Visual"
+  },
+  {
+    "year": "2010",
+    "title": "Instagram",
+    "description": "A platform for visual storytelling.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "category": "Visual"
+  },
+  {
+    "year": "2011",
+    "title": "Snapchat",
+    "description": "A multimedia messaging app with disappearing messages.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
+    "category": "Messaging"
+  }
+]
